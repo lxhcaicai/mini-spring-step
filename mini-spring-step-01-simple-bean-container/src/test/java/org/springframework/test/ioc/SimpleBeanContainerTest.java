@@ -6,14 +6,13 @@ import org.springframework.beans.factory.BeanFactory;
 
 public class SimpleBeanContainerTest {
 
-
     @Test
     public void testGetBean() {
         BeanFactory beanFactory = new BeanFactory();
-        beanFactory.registerBean("helloService",new HelloService());
+        beanFactory.registerBean("helloService", new HelloService());
         HelloService helloService = (HelloService) beanFactory.getBean("helloService");
         Assertions.assertNotNull(helloService);
-        Assertions.assertSame(helloService.sayHello(), "hello");
+        Assertions.assertSame(helloService.sayHello(),"hello");
     }
 
     class HelloService {
@@ -22,5 +21,4 @@ public class SimpleBeanContainerTest {
             return "hello";
         }
     }
-
 }

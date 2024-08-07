@@ -1,3 +1,4 @@
 rootProject.name = 'mini-spring-step'
 include 'small-spring-step-01'
+include 'mini-spring-step-01-simple-bean-container'
 

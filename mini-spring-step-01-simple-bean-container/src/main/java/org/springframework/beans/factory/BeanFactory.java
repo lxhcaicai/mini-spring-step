@@ -4,8 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BeanFactory {
-
-    private Map<String,Object> beanMap = new HashMap<>();
+    private Map<String, Object> beanMap = new HashMap<>();
 
     public void registerBean(String name, Object bean) {
         beanMap.put(name, bean);
@@ -14,5 +13,4 @@ public class BeanFactory {
     public Object getBean(String name) {
         return beanMap.get(name);
     }
-
 }
