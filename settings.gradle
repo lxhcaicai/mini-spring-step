@@ -1,4 +1,5 @@
 rootProject.name = 'mini-spring-step'
 include 'small-spring-step-01'
 include 'mini-spring-step-01-simple-bean-container'
+include 'mini-spring-step-02-bean-definition-and-bean-definition-registry'
 
