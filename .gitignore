@@ -1,0 +1,5 @@
+# Project exclude paths
+/.gradle/
+/small-spring-step-01/build/
+/small-spring-step-01/build/classes/java/main/
+/small-spring-step-01/build/classes/java/test/
