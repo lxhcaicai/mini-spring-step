@@ -1,19 +1,21 @@
-plugins {
-    id 'java'
-}
-
 group 'org.springframework'
 version '1.0'
 
-repositories {
-    mavenCentral()
-}
+subprojects {
+    // 添加插件
+    apply plugin: 'java'
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-}
+    repositories {
+        mavenCentral()
+    }
 
-test {
-    useJUnitPlatform()
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+        implementation 'cglib:cglib:3.3.0'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
 }
