@@ -3,4 +3,5 @@ include 'mini-spring-step-01-simple-bean-container'
 include 'mini-spring-step-02-bean-definition-and-bean-definition-registry'
 include 'mini-spring-step-03-instantiation-strategy'
 include 'mini-spring-step-04-populate-bean-with-property-values'
+include 'mini-spring-step-05-populate-bean-with-bean'
 
